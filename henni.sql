@@ -28,7 +28,7 @@ CREATE TABLE `achats` (
   `prix` int DEFAULT NULL,
   `taille` varchar(45) COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,6 @@ CREATE TABLE `achats` (
 
 LOCK TABLES `achats` WRITE;
 /*!40000 ALTER TABLE `achats` DISABLE KEYS */;
-INSERT INTO `achats` VALUES (1,'Sony',450,'55');
 /*!40000 ALTER TABLE `achats` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -63,7 +62,7 @@ CREATE TABLE `television` (
 
 LOCK TABLES `television` WRITE;
 /*!40000 ALTER TABLE `television` DISABLE KEYS */;
-INSERT INTO `television` VALUES (1,'Sony',450,'55');
+INSERT INTO `television` VALUES (1,'Sony',450,'55'),(2,'LG',780,'50'),(3,'Samsung',250,'32'),(4,'Philips',300,'50'),(5,'Apple',1000,'55');
 /*!40000 ALTER TABLE `television` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -81,7 +80,7 @@ CREATE TABLE `tvcasse` (
   `taille` varchar(45) COLLATE utf8_bin DEFAULT NULL,
   `descriptionCasse` varchar(45) COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,4 +101,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-19 19:11:23
+-- Dump completed on 2023-12-20  1:45:12
